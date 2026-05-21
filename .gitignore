@@ -1,0 +1,25 @@
+# PDFs
+*.pdf
+
+# Microsoft Office
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# LibreOffice / OpenDocument
+*.odt
+*.ods
+*.odp
+
+# Otros documentos comunes
+*.rtf
+*.csv
+
+# Presentaciones temporales / lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
