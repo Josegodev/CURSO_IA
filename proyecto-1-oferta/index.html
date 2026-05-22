@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta tecnica | Proyecto 1</title>
+  <meta name="description" content="Oferta tecnica web basada en partidas, resumen economico y consultas del cliente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio">Proyecto 1</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#resumen">Resumen</a>
+        <a href="#capitulos">Capitulos</a>
+        <a href="#partidas">Partidas</a>
+        <a href="#consultas">Consultas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Oferta tecnica web</p>
+        <h1>Instalaciones electricas y telecomunicaciones</h1>
+        <p class="hero-text">
+          Version minima para presentar alcance, importe, partidas y puntos que requieren aclaracion
+          antes de emitir una oferta cerrada.
+        </p>
+      </div>
+
+      <div class="hero-panel">
+        <p class="panel-label">Estado actual</p>
+        <ul class="hero-list">
+          <li>12 partidas analizadas</li>
+          <li>6 capitulos economicos</li>
+          <li>6 consultas pendientes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="summary" id="resumen">
+      <div class="section-heading">
+        <p class="eyebrow">Resumen economico</p>
+        <h2>Magnitudes base de la oferta</h2>
+      </div>
+      <div class="kpi-grid" id="kpiGrid"></div>
+    </section>
+
+    <section class="section" id="capitulos">
+      <div class="section-heading">
+        <p class="eyebrow">Desglose</p>
+        <h2>Importe por capitulo</h2>
+      </div>
+      <div class="chapter-list" id="chapterList"></div>
+    </section>
+
+    <section class="section two-column" id="alcance">
+      <article class="card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Objeto</p>
+          <h2>Alcance base</h2>
+        </div>
+        <p>
+          Elaboracion de oferta para canalizaciones, cableado, cuadros, telecomunicaciones,
+          medios auxiliares y documentacion final, segun mediciones y descompuestos disponibles.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Condicionantes</p>
+          <h2>Puntos a validar</h2>
+        </div>
+        <ul class="plain-list">
+          <li>Alturas y soportaciones reales de bandejas.</li>
+          <li>Necesidad de certificacion de red y pruebas.</li>
+          <li>Alcance de legalizacion, esquema y documentacion final.</li>
+          <li>Medios auxiliares especiales y trabajos en altura.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="partidas">
+      <div class="section-heading">
+        <p class="eyebrow">Detalle</p>
+        <h2>Partidas incluidas</h2>
+      </div>
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Capitulo</th>
+              <th>Descripcion</th>
+              <th>Cantidad</th>
+              <th>Venta</th>
+              <th>Riesgo</th>
+            </tr>
+          </thead>
+          <tbody id="partidasBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="consultas">
+      <div class="section-heading">
+        <p class="eyebrow">RFI</p>
+        <h2>Consultas al cliente</h2>
+      </div>
+      <div class="question-grid" id="questionGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Oferta tecnica base</p>
+    <p>Proyecto 1 · instalaciones electricas y telecomunicaciones</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
